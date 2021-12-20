@@ -1,0 +1,189 @@
+html{
+    font-size: 100.01%;
+}
+div {
+    display: block;
+}
+#logo-a {
+    position: absolute;
+    top: 25px;
+    left: 60px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    font-size: 68px;
+    text-decoration: none;
+    color: #fcf7f8;
+}
+#slogan {
+    position: absolute;
+    top: 120px;
+    left: 180px;
+    font-family: Delius,cursive;
+    color: #fcf7f8;
+    font-size: 24px;
+}
+#logo-bg {
+    background-position: 0 -67px;
+    width: 960px;
+    height: 197px;
+}
+#bottom, #logo-bg {
+    background: url(img/backgrounds.1.1.png) no-repeat top left;
+}
+#download{
+    background-position: 0 -431px;
+}
+#download, #download-selected {
+    position: absolute;
+    top: 172px;
+    left: 350px;
+}
+#pagrindinis {
+    background-position: 0 -689px;
+}
+#pagrindinis, #pagrindinis-selected {
+    position: absolute;
+    top: 172px;
+    left: 80px;
+}
+#pirkti {
+    background-position: 0 -173px;
+}
+#pirkti, #pirkti-selected {
+    position: absolute;
+    top: 172px;
+    left: 620px;
+}
+#pirkti, #download, #gallery, #home, #online, #printables, #support {
+    padding-top: 35px;
+}
+#pirkti, #pirkti-selected, #download, #download-selected, #gallery, #gallery-selected, #pagrindinis, #pagrindinis-selected, #online, #online-selected, #printables, #printables-selected, #support, #support-selected {
+    background: url(img/navigation.1.1.png) no-repeat top left;
+    width: 110px;
+    height: 0;
+    overflow: hidden;
+}
+#menu {
+    list-style-type: none;
+}
+#online {
+    background-position: 0 -947px;
+}
+#online, #online-selected {
+    position: absolute;
+    top: 172px;
+    left: 215px;
+}
+#printables {
+    background-position: 0 -1205px;
+}
+#printables, #printables-selected {
+    position: absolute;
+    top: 172px;
+    left: 485px;
+}
+#support {
+    background-position: 0 -1721px;
+}
+#support, #support-selected {
+    position: absolute;
+    top: 172px;
+    left: 755px;
+}
+.span-30 {
+    width: 960px;
+    margin-right: 0;
+}
+.last {
+    margin-right: 0;
+    padding-left: 0;
+}
+.column, .span-1, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-2, .span-20, .span-21, .span-22, .span-23, .span-24, .span-25, .span-26, .span-27, .span-28, .span-29, .span-3, .span-30, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9 {
+    float: left;
+    margin-right: 0;
+}
+body {
+    font-size: 75%;
+    color: #222;
+    background: #fff;
+    line-height: 1.5;
+    font-family: "Helvetica Neue",Arial,Helvetica,sans-serif;
+}
+a {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    color: #06c;
+    text-decoration: underline;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+}
+a, abbr, acronym, address, article, aside, blockquote, body, caption, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, iframe, img, label, legend, li, nav, object, ol, p, pre, q, section, span, table, tbody, td, tfoot, th, thead, tr, ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+.column, .span-1, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-2, .span-20, .span-21, .span-22, .span-23, .span-24, .span-25, .span-26, .span-27, .span-28, .span-29, .span-3, .span-30, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9 {
+    float: left;
+    margin-right: 0;
+}
+.color91{
+    top: 69px;
+}
+.color92{
+    top: 129px;
+}
+.color93{
+    top: 189px;
+}
+.color94{
+    top: 249px;
+}
+.color95{
+    top: 309px;
+}
+.color96{
+    top: 369px;
+}
+.color97{
+    top: 429px;
+}
+.color98{
+    top: 489px;
+}
+.color99{
+    top: 549px;
+}
+.color51, .color52, .color53, .color54, .color55, .color61, .color62, 
+.color63, .color64, .color65, .color66, .color71, .color72, .color73, 
+.color74, .color75, .color76, .color77, .color81, .color82, .color83, 
+.color84, .color85, .color86, .color87, .color88, .color91, .color92, 
+.color93, .color94, .color95, .color96, .color97, .color98, .color99 {
+    position: absolute;
+    width: 128px;
+    height: 53px;
+    left: 20px;
+}
+.layer {
+    position: absolute;
+    float: left;
+    position: absolute;
+    list-style: none;
+    width: 736px;
+    height: 649px;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+ol, p, ul {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    text-indent: 20px;
+}
+ul {
+    list-style-type: disc;
+}
