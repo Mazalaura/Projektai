@@ -1,8 +1,85 @@
 html{
     font-size: 100.01%;
 }
-div {
-    display: block;
+body {
+    font-size: 75%;
+    line-height: 1.5;
+    background: #fff;
+    font-family: "Helvetica Neu", Arial, Helvetica, sans-serif;
+}
+#bottom {
+    background-position: 0 0;
+    width: 960px;
+    height: 47px;
+}
+#bottom, #logo-bg {
+    background: url(img/backgrounds.1.1.png) no-repeat top left;
+}
+#buy {
+    background-position: 0 -173px;
+}
+#buy, #buy-selected {
+    position: absolute;
+    top: 172px;
+    left: 620px;
+}
+#buy, #download, #gallery, #home, #online, #printables, #support {
+    padding-top: 35px;
+}
+#buy, #buy-selected, #download, #download-selected, #gallery, #gallery-selected, #home, #home-selected, #online, #online-selected, #printables, #printables-selected, #support, #support-selected {
+    background: url(img/navigation.1.1.png) no-repeat top left;
+    width: 110px;
+    height: 0;
+    overflow: hidden;
+}
+#copy-padding {
+    padding-top: 12px;
+    padding-bottom: 40px;
+}
+#download{
+    background-position: 0 -431px;
+}
+#download, #download-selected {
+    position: absolute;
+    top: 172px;
+    left: 350px;
+}
+#home {
+    background-position: 0 -689px;
+}
+#home, #home-selected {
+    position: absolute;
+    top: 172px;
+    left: 80px;
+}
+#menu {
+    list-style-type: none;
+}
+#menu li {
+    float: left;
+}
+#online {
+    background-position: 0 -947px;
+}
+#online, #online-selected {
+    position: absolute;
+    top: 172px;
+    left: 215px;
+}
+#login-1-place {
+    top: 22px;
+}
+#login-1-place, #login-2-place {
+    text-align: right;
+    width: 140px;
+    position: absolute;
+    left: 800px;
+}
+#login-1-place a, #login-2-place a {
+    font-weight: 600;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    color: #addcf5;
 }
 #logo-a {
     position: absolute;
@@ -14,65 +91,19 @@ div {
     text-decoration: none;
     color: #fcf7f8;
 }
-#slogan {
-    position: absolute;
-    top: 120px;
-    left: 180px;
-    font-family: Delius,cursive;
-    color: #fcf7f8;
-    font-size: 24px;
-}
 #logo-bg {
     background-position: 0 -67px;
     width: 960px;
     height: 197px;
 }
-#bottom, #logo-bg {
-    background: url(img/backgrounds.1.1.png) no-repeat top left;
+#left {
+    top: 20px;
+    left: 720px;
+    width: 50px;
+    height: 50px;
 }
-#download{
-    background-position: 0 -431px;
-}
-#download, #download-selected {
+#left, #right, .change, .clean, .full-screen, .undo {
     position: absolute;
-    top: 172px;
-    left: 350px;
-}
-#pagrindinis {
-    background-position: 0 -689px;
-}
-#pagrindinis, #pagrindinis-selected {
-    position: absolute;
-    top: 172px;
-    left: 80px;
-}
-#pirkti {
-    background-position: 0 -173px;
-}
-#pirkti, #pirkti-selected {
-    position: absolute;
-    top: 172px;
-    left: 620px;
-}
-#pirkti, #download, #gallery, #home, #online, #printables, #support {
-    padding-top: 35px;
-}
-#pirkti, #pirkti-selected, #download, #download-selected, #gallery, #gallery-selected, #pagrindinis, #pagrindinis-selected, #online, #online-selected, #printables, #printables-selected, #support, #support-selected {
-    background: url(img/navigation.1.1.png) no-repeat top left;
-    width: 110px;
-    height: 0;
-    overflow: hidden;
-}
-#menu {
-    list-style-type: none;
-}
-#online {
-    background-position: 0 -947px;
-}
-#online, #online-selected {
-    position: absolute;
-    top: 172px;
-    left: 215px;
 }
 #printables {
     background-position: 0 -1205px;
@@ -82,6 +113,22 @@ div {
     top: 172px;
     left: 485px;
 }
+#right {
+    top: 20px;
+    left: 790px;
+    width: 50px;
+    height: 50px;
+}
+#share42 {
+    display: inline-block;
+    padding: 6px 0 0 6px;
+    background: #fff;
+    border: 1px solid #e9e9e9;
+    border-radius: 4px;
+}
+#share42 a {
+    opacity: .5;
+}
 #support {
     background-position: 0 -1721px;
 }
@@ -89,18 +136,6 @@ div {
     position: absolute;
     top: 172px;
     left: 755px;
-}
-.span-30 {
-    width: 960px;
-    margin-right: 0;
-}
-.last {
-    margin-right: 0;
-    padding-left: 0;
-}
-.column, .span-1, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-2, .span-20, .span-21, .span-22, .span-23, .span-24, .span-25, .span-26, .span-27, .span-28, .span-29, .span-3, .span-30, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9 {
-    float: left;
-    margin-right: 0;
 }
 body {
     font-size: 75%;
@@ -119,13 +154,109 @@ a:-webkit-any-link {
     color: -webkit-link;
     cursor: pointer;
 }
-a, abbr, acronym, address, article, aside, blockquote, body, caption, code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, iframe, img, label, legend, li, nav, object, ol, p, pre, q, section, span, table, tbody, td, tfoot, th, thead, tr, ul {
+a, abbr, acronym, address, article, aside, blockquote, body, caption, 
+code, dd, del, dfn, dialog, div, dl, dt, em, fieldset, figure, footer, 
+form, h1, h2, h3, h4, h5, h6, header, hgroup, iframe, img, label, legend, 
+li, nav, object, ol, p, pre, q, section, span, table, tbody, td, tfoot, 
+th, thead, tr, ul {
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+}
+a img {
+    border: none;
+}
+h1 {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    margin-bottom: 0.5em;
+}
+h1#h-online {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 28px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    color: #111;
+}
+p, ul {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 18px;
+    text-indent: 20px;
+}
+ul {
+    margin: 0 1.5em 1.5em 0;
+    padding-left: 1.5em;
+}
+li {
+    text-align: -webkit-match-parent;
+}
+ul {
+    list-style-type: disc;
+}
+ul#bottom-menu {
+    list-style-type: none;
+    padding-top: 17px;
+    text-indent: 0;
+}
+ul#bottom-menu li {
+    float: left;
+}
+ul#bottom-menu li a {
+    font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
+    padding-left: 10px;
+    color: #878d02;
+    font-weight: 600;
+}
+.append-1 {
+    padding-right: 32px;
+}
+.append-2 {
+    padding-right: 64px;
+}
+.append-3 {
+    padding-right: 96px;
+}
+.base {
+    position: relative;
+    height: 649px;
+    margin: auto;
+}
+.change {
+    top: 0;
+    left: 250px;
+    display: none;
+    width: 70px;
+    height: 35px;
+}
+.center {
+    text-align: center;
+}
+.clearfix, .container {
+    display: block;
+}
+.clearfix:after, .container:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    overflow: hidden;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
 }
 .column, .span-1, .span-10, .span-11, .span-12, .span-13, .span-14, .span-15, .span-16, .span-17, .span-18, .span-19, .span-2, .span-20, .span-21, .span-22, .span-23, .span-24, .span-25, .span-26, .span-27, .span-28, .span-29, .span-3, .span-30, .span-4, .span-5, .span-6, .span-7, .span-8, .span-9 {
     float: left;
@@ -168,22 +299,69 @@ a, abbr, acronym, address, article, aside, blockquote, body, caption, code, dd, 
     height: 53px;
     left: 20px;
 }
+.clean {
+    top: 0;
+    left: 500px;
+    display: none;
+    width: 35px;
+    height: 35px;
+}
+.full-screen {
+    top: 0;
+    left: 916px;
+    width: 35px;
+    height: 35px;
+}
+.logo-container {
+    padding-top: 13px;
+    position: relative;
+}
+.last {
+    margin-right: 0;
+    padding-left: 0;
+}
 .layer {
     position: absolute;
     float: left;
-    position: absolute;
     list-style: none;
     width: 736px;
     height: 649px;
 }
-li {
-    text-align: -webkit-match-parent;
+.prepend-2 {
+    padding-left: 64px;
 }
-ol, p, ul {
-    font-family: 'Open Sans',sans-serif;
-    font-size: 18px;
-    text-indent: 20px;
+.prepend-3 {
+    padding-left: 96px;
 }
-ul {
-    list-style-type: disc;
+.prepend-6 {
+    padding-left: 192px;
+}
+.page-container {
+    background: url(img/online/download.png) repeat-y;
+}
+.space-1 {
+    padding-top: 25px;
+}
+.span-6{
+    padding-top: 32px;
+}
+.span-23 {
+    width: 736px;
+}
+.span-24 {
+    width: 768px;
+}
+.span-26 {
+    width: 832px;
+}
+.span-30 {
+    width: 960px;
+    margin-right: 0;
+}
+.undo {
+    top: 0;
+    left: 350px;
+    display: none;
+    width: 35px;
+    height: 35px;
 }
