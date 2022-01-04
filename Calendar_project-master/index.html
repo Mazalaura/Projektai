@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
+    <title>Calendar</title>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <header>
+          <h1 id="currentPeriod"></h1>
+        </header>
+        <div>
+          <button id="showForm" class="btn">Create event</button>
+        </div>
+      </div>
+      <div class="all-view">
+        <div class="month-view">
+          <h3 id="month"></h3>
+          <div class="calendar">
+            <div>
+              <div class="day"> Monday</div>
+              <div id="monday"></div>
+            </div>
+            <div>
+              <div class="day">Tuesday</div>
+              <div id="tuesday"></div>
+            </div>
+            <div>
+              <div class="day">Wednesday</div>
+              <div id="wednesday"></div>
+            </div>
+            <div>
+              <div class="day">Thursday</div>
+              <div id="thursday"></div>
+            </div>
+            <div>
+              <div class="day">Friday</div>
+              <div id="friday"></div>
+            </div>
+            <div>
+              <div class="saturday">Saturday</div>
+              <div id="saturday"></div>
+            </div>
+            <div>
+              <div class="sunday">Sunday</div>
+              <div id="sunday"></div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div id="formInputs" class="form-inputs">
+            <form action="" method="post">
+              <h3>Create View</h3>
+              <div>
+                <label for="title">Title</label>
+                <input type="text" required id="title" maxlength="50" />
+                <div>
+                  <span class="inputError" id="titleErr1"
+                    >This field is required and cannot bet empty!</span
+                  >
+                  <span class="inputError" id="titleErr2">Too long title!</span>
+                </div>
+              </div>
+              <div>
+                <label for="date">Date</label>
+                <input type="date" required id="date" />
+                <div>
+                  <span class="inputError" id="dateErr1"
+                    >This field is required and cannot bet empty!</span
+                  >
+                  <span class="inputError" id="dateErr2">Wrong date type!</span>
+                </div>
+              </div>
+              <div>
+                <label for="startTime">Start time</label>
+                <input type="time" required id="startTime" />
+                <div>
+                  <span class="inputError" id="startTimeErr1"
+                    >This field is required and cannot bet empty!</span
+                  >
+                  <span class="inputError" id="startTimeErr2"
+                    >Wrong time type!</span
+                  >
+                </div>
+              </div>
+              <div>
+                <label for="endTime">End time</label>
+                <input type="time" required id="endTime" />
+                <div>
+                  <span class="inputError" id="endTimeErr1"
+                    >This field is required and cannot bet empty!</span
+                  >
+                  <span class="inputError" id="endTimeErr2"
+                    >Wrong time type!</span
+                  >
+                  <span class="inputError" id="endTimeErr3"
+                    >End time has to be later than start time!</span
+                  >
+                </div>
+              </div>
+              <div>
+                <label for="type">Type</label>
+                <select name="" id="type" required>
+                  <option value="Meeting" selected>Meeting</option>
+                  <option value="Call">Call</option>
+                  <option value="Out of office">Out of office</option>
+                </select>
+                <div>
+                  <span class="inputError" id="typeErr1"
+                    >This field is required!</span
+                  >
+                  <span class="inputError" id="typeErr2">Wrong type type!</span>
+                </div>
+              </div>
+              <div>
+                <label for="description">Description</label>
+                <textarea
+                  name=""
+                  id="description"
+                  cols="30"
+                  rows="10"
+                ></textarea>
+              </div>
+              <div>
+                <button type="submit" id="createEventBtn" class="btn">
+                  Create event
+                </button>
+              </div>
+            </form>
+          </div>
+          <div id="detailedViews">
+            Detail view, create field on fly
+            <button id="modalBtn" class="btn">Delete</button>
+            <div id="modalView" class="modal">
+              <div class="modal-content">
+                <button class="btn closeBtn">Cancel</button>
+                <button class="btn submitBtn">Submit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
