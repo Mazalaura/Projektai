@@ -1,0 +1,194 @@
+@import url("reset.css");
+@import url("grid.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+  margin: 0 20px 0 20px;
+}
+
+.header {
+  height: 100px;
+}
+
+.header .r1 {
+  float: left;
+  padding: 40px 20px 40px 50px;
+}
+
+.header .r1 h1 {
+  color: black;
+  font-size: 22px;
+}
+
+.header .r1 ul li {
+  float: right;
+}
+
+.header .r1 ul li a {
+  padding: 0 10px 0 10px;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.r1:first-child {
+  width: 50%;
+}
+
+.r1:last-child {
+  width: 50%;
+}
+
+div::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.prlx {
+  margin: 0 20px 0 20px;
+  background-image: url(photo/mano.jpg);
+  min-height: 600px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #be1b1b;
+  position: relative;
+}
+
+.prlx .prlx-inside {
+  position: absolute;
+  padding: 50px;
+  bottom: 50px;
+}
+
+.prlx .prlx-inside h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.storry-container {
+  margin: 40px 20px 40px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.storry-container > div {
+  width: auto;
+  height: 200px;
+}
+
+.storry-container .storry-content {
+  background-color: #c5c5c0;
+  margin-right: 10px;
+  text-align: center;
+  padding: 60px;
+}
+
+.storry-container .img-container {
+  background-image: url(photo/gr4.jpeg);
+  margin-left: 10px;
+}
+
+.main-info {
+  margin: 20px;
+}
+
+.main-info h3 {
+  font-size: 40px;
+  text-align: center;
+  margin: 80px 0 20px 0;
+}
+
+.main-info h4 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-info .exp-container {
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-info .exp-container .exp-col {
+  width: calc(50% - 20px);
+  height: 400px;
+  background-color: #abcce2;
+  color: white;
+}
+
+.main-info .exp-container .exp2 {
+  background-color: #4d4d4d;
+}
+
+.main-info .exp-container .exp3 {
+  background-color: #74b174;
+  color: black;
+}
+
+.footer {
+  position: relative;
+  background-color: #f7f7f7;
+  margin: 0 20px 0 20px;
+  height: 400px;
+}
+
+.footer .ftr-cont {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+}
+
+.footer .ftr-cont .ftr {
+  margin: 20px;
+}
+
+.footer .ftr-cont .ftr h3 {
+  margin: 20px;
+}
+
+.footer .ftr-cont h2 {
+  font-size: 40px;
+}
+
+.footer .ftr-cont i {
+  font-size: 15px;
+  color: black;
+  margin: 5px;
+}
+
+.arrow {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+
+.arrow img {
+  opacity: 0.2;
+}
+/*# sourceMappingURL=portstyle.css.map */

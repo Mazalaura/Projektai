@@ -1,0 +1,181 @@
+@import url("reset.css");
+@import url("grid.css");
+
+* {
+    box-sizing: border-box;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+body {
+    font-family: 'Oswald', sans-serif;
+    margin: 0 20px 0 20px;
+}
+// ===================== HEADER (R1) ========================
+
+.header {
+    height: 100px;
+    .r1 {
+        float: left;
+        padding: 40px 20px 40px 50px;    
+        h1 {
+            color: black;
+            font-size: 22px;
+        }
+        ul{           
+            li {
+                float: right;
+                a {              
+                    padding: 0 10px 0 10px;
+                    color: black;
+                    font-size: 14px;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+              
+
+                }
+            }
+        }
+    }
+}
+.r1:first-child {
+    width: 50%;
+}
+.r1:last-child {
+    width: 50%;
+}
+div::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+// ===================== HEADER END ========================
+// ===================== PARALLAX ============================
+.prlx {
+    margin: 0 20px 0 20px;
+    background-image: url(photo/mano.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #be1b1b;
+    // color: rgb(254, 252, 143);
+    position: relative;
+    .prlx-inside {
+        position: absolute;
+        padding: 50px;
+        bottom: 50px;
+    
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// ===================== PARALLAX ============================
+// ===================== STORY ===============================
+.storry-container {
+    margin: 40px 20px 40px 20px;
+    display: flex;
+    > div {
+        width: auto;
+        height: 200px;
+        
+    }
+    
+    .storry-content {
+        background-color: rgb(197, 197, 192);
+        margin-right: 10px;
+        text-align: center;
+        padding: 60px;
+    }
+    .img-container {
+        background-image: url(photo/gr4.jpeg);
+        margin-left: 10px;
+    }
+}
+
+// ===================== MAIN-INFO ===============================
+.main-info {
+    margin: 20px;
+    h3 {
+        font-size: 40px;
+        text-align: center;
+        margin: 80px 0 20px 0;
+    }
+    h4 {
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .exp-container {
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .exp-col {
+            width: calc(50% - 20px);
+            height: 400px;
+            background-color: rgb(171, 204, 226);
+            color: white;
+        }
+        .exp2 {
+            background-color: rgb(77, 77, 77);
+        }
+        .exp3 {
+            background-color: rgb(116, 177, 116);
+            color: black;
+        }
+    }
+}
+
+// ===================== GRID CONT ============================
+
+// ===================== GRID CONT ============================
+// ===================== FOOTER ============================
+.footer {
+    position: relative;
+    background-color: #f7f7f7;
+    margin: 0 20px 0 20px;
+    height: 400px;
+    .ftr-cont {
+        position: absolute;
+        top: 30%;
+        width: 100%;
+        text-align: center;
+        font-size: 15px;
+        .ftr {
+            margin: 20px;
+            h3 {
+                margin: 20px;
+            }
+        }
+        h2 {
+            font-size: 40px;
+        }
+        i {
+            font-size: 15px;
+            color: black;
+            margin: 5px;
+        }
+    }
+
+}
+// ===================== arrow ============================
+.arrow {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    width: 30px;
+    height: 30px;
+    float: right;
+    img {
+        // background-color: #f7f7f7;
+        opacity: 0.2;
+    }
+    }
